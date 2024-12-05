@@ -5,6 +5,7 @@ import KiberXavfsizlik from "../imgs/Kiber xavfsizlik.png";
 import WebDasturlash from "../imgs/web dasturlash.png";
 import English from "../imgs/Engish.png";
 import Slider from "react-slick";
+import { Button } from "../ui/button";
 
 function Card() {
   const settings = {
@@ -27,18 +28,18 @@ function Card() {
             </h4>
           </div>
           <div className="flex">
-            <button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
               Hammasi
-            </button>
-            <button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            </Button>
+            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng yangi
-            </button>
-            <button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            </Button>
+            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng past narx
-            </button>
-            <button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            </Button>
+            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng yuqori narx
-            </button>
+            </Button>
           </div>
         </div>
       </div>
