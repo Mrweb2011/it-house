@@ -4,9 +4,9 @@ import { SlLocationPin } from "react-icons/sl";
 
 function Footer() {
   return (
-    <div className='bg-gray-200 mt-28 py-10 px-14'>
+    <div className='bg-secondary mt-28 py-10 px-14'>
         <div className="flex gap-20">
-        <h1 className='font-semibold text-gray-800'>IT sohasidagi barcha sifatli kurslar. Biz bilan IT sohasini o'rganish endi yanada <br />osonroq shunchaki boshlang.</h1>
+        <h1 className='font-semibold'>IT sohasidagi barcha sifatli kurslar. Biz bilan IT sohasini o'rganish endi yanada <br />osonroq shunchaki boshlang.</h1>
         <div className="flex gap-32">
         <div className="column">
             <h1 className='font-semibold text-3xl'>Sahifalar</h1>
@@ -28,7 +28,7 @@ function Footer() {
         </div>
         </div>
         <hr className='text-gray-300 my-10 w-ful h-1' />
-        <h1 className='font-semibold text-gray-800'>© 2024. Barcha huquqlar himoyalangan</h1>
+        <h1 className='font-semibold'>© 2024. Barcha huquqlar himoyalangan</h1>
     </div>
   )
 }

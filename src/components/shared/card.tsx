@@ -4,19 +4,12 @@ import KompyuterSavodxonligi from "../imgs/kompyuter savodxonligi.png";
 import KiberXavfsizlik from "../imgs/Kiber xavfsizlik.png";
 import WebDasturlash from "../imgs/web dasturlash.png";
 import English from "../imgs/Engish.png";
-import Slider from "react-slick";
 import { Button } from "../ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 
 function Card() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-  };
   return (
-    <div>
+    <div className="px-32">
       <div className="flex justify-center mt-14">
         <div className="flex items-center gap-28">
           <div className="column">
@@ -28,24 +21,25 @@ function Card() {
             </h4>
           </div>
           <div className="flex">
-            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            <Button className="bg-secondary px-5 py-2 rounded-3xl font-semibold ml-1">
               Hammasi
             </Button>
-            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            <Button className="bg-secondary px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng yangi
             </Button>
-            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            <Button className="bg-secondary px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng past narx
             </Button>
-            <Button className="bg-gray-200 px-5 py-2 rounded-3xl font-semibold ml-1">
+            <Button className="bg-secondary px-5 py-2 rounded-3xl font-semibold ml-1">
               Eng yuqori narx
             </Button>
           </div>
         </div>
       </div>
-      <div className="gap-3 px-32">
-        <Slider {...settings} className="flex gap-10">
-          <div className="border-2 rounded-2xl">
+<Carousel className="mt-5">
+  <CarouselContent>
+    <CarouselItem className="basis-1/2">
+    <div className="border-2 rounded-2xl">
             <img className="relative w-full h-72 -top-1" src={Phyton} alt="" />
             <h1 className="font-bold text-3xl px-3">Phyton</h1>
             <hr className="my-3 mx-3" />
@@ -67,7 +61,9 @@ function Card() {
               </h1>
             </div>
           </div>
-          <div className="border-2 rounded-2xl">
+    </CarouselItem>
+    <CarouselItem className="basis-1/2">
+    <div className="border-2 rounded-2xl">
             <img className="w-full h-72" src={MsOffice} alt="" />
             <h1 className="font-bold text-3xl mx-2">Office dasturlari</h1>
             <hr className="my-3 mx-3" />
@@ -83,7 +79,9 @@ function Card() {
               </div>
             </div>
           </div>
-          <div className="border-2 rounded-2xl">
+    </CarouselItem>
+    <CarouselItem className="basis-1/2">
+    <div className="border-2 rounded-2xl">
             <img className="w-full h-72" src={KompyuterSavodxonligi} alt="" />
             <h1 className="font-bold text-3xl mx-2">Kompyuter savodxonligi</h1>
             <hr className="my-3 mx-3" />
@@ -97,7 +95,9 @@ function Card() {
               </div>
             </div>
           </div>
-          <div className="border-2 rounded-2xl">
+    </CarouselItem>
+    <CarouselItem className="basis-1/2">
+    <div className="border-2 rounded-2xl">
             <img className="w-full h-72" src={English} alt="" />
             <h1 className="font-bold text-3xl mx-2">English & IT</h1>
             <hr className="my-3 mx-3" />
@@ -111,7 +111,9 @@ function Card() {
               </div>
             </div>
           </div>
-          <div className="border-2 rounded-2xl">
+    </CarouselItem>
+    <CarouselItem className="basis-1/2">
+    <div className="border-2 rounded-2xl">
             <img className="w-full h-72" src={WebDasturlash} alt="" />
             <h1 className="font-bold text-3xl mx-2">Web Dasturlash</h1>
             <hr className="my-3 mx-3" />
@@ -125,6 +127,9 @@ function Card() {
               </div>
             </div>
           </div>
+    </CarouselItem>
+    <CarouselItem className="basis-1/2">
+    <div className="gap-3 px-32">
           <div className="border-2 rounded-2xl">
             <img className="w-full h-72" src={KiberXavfsizlik} alt="" />
             <h1 className="font-bold text-3xl mx-2">Kiberxavfsizlik</h1>
@@ -141,8 +146,12 @@ function Card() {
               </div>
             </div>
           </div>
-        </Slider>
       </div>
+    </CarouselItem>
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
     </div>
   );
 }
