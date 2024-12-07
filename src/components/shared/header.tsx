@@ -12,8 +12,8 @@ function Header() {
       <div className="flex justify-between gap-80">
       <div className='flex items-center gap-5'>
         <div className="flex gap-2 items-center">
-          <Button className='flex items-center gap-2'>
-          <img className='w-11 mt-2' src="https://ithouseonline.uz/logo.svg" alt="" />
+          <Button className='flex items-center gap-2 bg-none'>
+          <img className='w-11 mt-2' src="https://ithouseonline.uz/logo.svg" alt="ithouseonline.uz/logo.svg" />
           <h1 className='font-bold text-3xl'>IT HOUSE</h1>
           </Button>
         </div>
@@ -25,10 +25,10 @@ function Header() {
       </ul>
       </div>
       <div className="flex gap-2 items-center">
-        <Button className='bg-secondary border-none text-2xl p-2 rounded-lg'><IoSearchOutline /></Button>
-        <Button className='bg-secondary border-none text-2xl p-2 rounded-lg'><LuLanguages /></Button>
-        <Button className='bg-secondary border-none text-2xl p-2 rounded-lg'><FiBell /></Button>
-        <Button className='bg-secondary border-none text-2xl p-2 rounded-lg'><SlBasket /></Button>
+        <Button className='bg-secondary p-2 rounded-lg'><IoSearchOutline /></Button>
+        <Button className='bg-secondary p-2 rounded-lg'><LuLanguages /></Button>
+        <Button className='bg-secondary p-2 rounded-lg'><FiBell /></Button>
+        <Button className='bg-secondary p-2 rounded-lg'><SlBasket /></Button>
         <Button><ModeToggle /></Button>
         <Button className='bg-red-500 text-white py-3 px-9 rounded-3xl'>Kirish</Button>
       </div>

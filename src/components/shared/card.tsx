@@ -44,7 +44,7 @@ function Card() {
             <h1 className="font-bold text-3xl px-3">Phyton</h1>
             <hr className="my-3 mx-3" />
             <div className="flex ">
-              <h1 className="font-semibold px-3">
+              <h1 className="font-semibold px-3 pt-1 pb-5">
                 Django, Postgresql, Djangorest framework, JS ,...
               </h1>
               <h1 className="text-gray-500 text-xs font-semibold">
@@ -68,7 +68,7 @@ function Card() {
             <h1 className="font-bold text-3xl mx-2">Office dasturlari</h1>
             <hr className="my-3 mx-3" />
             <div className="flex gap-7">
-              <h1 className="font-semibold mx-3">
+              <h1 className="font-semibold mx-3 pt-1 pb-5">
                 Ms Word, Ms Exsel & Ms PowerPoint
               </h1>
               <div className="flex gap-2">
@@ -85,8 +85,8 @@ function Card() {
             <img className="w-full h-72" src={KompyuterSavodxonligi} alt="" />
             <h1 className="font-bold text-3xl mx-2">Kompyuter savodxonligi</h1>
             <hr className="my-3 mx-3" />
-            <div className="flex gap-48">
-              <h1 className="font-semibold mx-3">Kompyuterni anglaymiz</h1>
+            <div className="flex gap-40">
+              <h1 className="font-semibold mx-3 pt-1 pb-5">Kompyuterni anglaymiz</h1>
               <div className="flex gap-2">
                 <h1 className="text-gray-500 text-xs font-semibold">
                   <s>0 so'm</s>
@@ -102,7 +102,7 @@ function Card() {
             <h1 className="font-bold text-3xl mx-2">English & IT</h1>
             <hr className="my-3 mx-3" />
             <div className="flex gap-60">
-              <h1 className="font-semibold mx-3">Grammar & Speaking</h1>
+              <h1 className="font-semibold mx-3 pt-1 pb-5">Grammar & Speaking</h1>
               <div className="flex gap-2">
                 <h1 className="text-gray-500 text-xs font-semibold">
                   <s>0 so'm</s>
@@ -118,7 +118,7 @@ function Card() {
             <h1 className="font-bold text-3xl mx-2">Web Dasturlash</h1>
             <hr className="my-3 mx-3" />
             <div className="flex gap-40">
-              <h1 className="font-semibold mx-3">Frontend (React JS)</h1>
+              <h1 className="font-semibold mx-3 pt-1 pb-5">Frontend (React JS)</h1>
               <div className="flex gap-2">
                 <h1 className="text-gray-500 text-xs font-semibold">
                   <s>3,000,000 so'm</s>

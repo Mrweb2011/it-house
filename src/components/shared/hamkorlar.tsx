@@ -1,10 +1,19 @@
 import YoshlarIshlari from "../imgs/YoshlarIshlari.png";
 import UzumNasiya  from "../imgs/uzumnasiya.png";
+import { Carousel } from "../ui/carousel";
+import Autoplay from "embla-carousel-autoplay"
 
 function Hamkorlar() {
   return (
-    <div className='relative top-10 bg-secondary py-2 w-full h-20 flex px-20 justify-between'>
-        <img className="h-18" data-original="https://static.tildacdn.one/tild6138-6533-4736-a163-326461646138/Vector.svg" alt=""  src="https://static.tildacdn.one/tild6138-6533-4736-a163-326461646138/Vector.svg" />
+    <div>
+    <Carousel className='relative top-10 bg-secondary py-2 w-full h-20 flex px-20 justify-between'
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+        <img src="https://ithouseonline.uz/assets/brands/nurinvest.svg" alt="Nurinvest logo" />
         <img className='w-52 h-16' src={YoshlarIshlari} alt="" />
         <svg className='mt-3' width="95" height="51" viewBox="0 0 95 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5283 0H0V22.1103C0 24.0736 0.326226 25.8437 0.978679 27.4207C1.63113 28.9977 2.53453 30.3414 3.68887 31.4517C4.84321 32.5621 6.23176 33.4149 7.85453 34.0103C9.4773 34.6057 11.2757 34.9034 13.2498 34.9034C15.1904 34.9034 16.9805 34.5897 18.62 33.9621C20.2595 33.3345 21.6731 32.4655 22.8609 31.3552C24.0487 30.2448 24.9689 28.9172 25.6213 27.3724C26.2738 25.8276 26.6 24.154 26.6 22.3517C26.6 20.131 26.2236 18.2322 25.4708 16.6552C24.7179 15.0782 23.7643 13.7828 22.61 12.769C21.4557 11.7552 20.1758 11.0069 18.7706 10.5241C17.3653 10.0414 16.0102 9.8 14.7053 9.8C13.0992 9.8 11.694 10.0816 10.4894 10.6448C9.28491 11.208 8.33132 11.9563 7.62868 12.8897H7.5283V0ZM17.3904 26.5517C16.3364 27.6138 14.9562 28.1448 13.2498 28.1448C11.5434 28.1448 10.1632 27.6138 9.10925 26.5517C8.05528 25.4897 7.5283 24.0897 7.5283 22.3517C7.5283 20.6138 8.05528 19.2138 9.10925 18.1517C10.1632 17.0897 11.5434 16.5586 13.2498 16.5586C14.9562 16.5586 16.3364 17.0897 17.3904 18.1517C18.4443 19.2138 18.9713 20.6138 18.9713 22.3517C18.9713 24.0897 18.4443 25.4897 17.3904 26.5517Z" fill="#191D31"></path>
@@ -15,6 +24,7 @@ function Hamkorlar() {
                             <path d="M81.734 36.2103L69.186 43.1069L56.6415 36.2103V43.1069L69.1878 50.0034L81.7358 43.1069V36.2103H81.734Z" fill="#7065F0"></path>
         </svg>
         <img className='w-52 h-52 -mt-16' src={UzumNasiya} alt="" />
+    </Carousel>
     </div>
   )
 }
